@@ -1,7 +1,7 @@
 {
     "name": "@kdt-bun/eslint-config",
     "type": "module",
-    "version": "0.0.0",
+    "version": "0.0.1",
     "packageManager": "pnpm@10.12.1",
     "description": "ESLint configuration for TypeScript projects",
     "author": "Diep Dang <kdt310722@gmail.com>",
@@ -22,7 +22,10 @@
     },
     "main": "dist/index.js",
     "types": "dist/index.d.ts",
-    "files": ["dist", "src"],
+    "files": [
+        "dist",
+        "src"
+    ],
     "scripts": {
         "inspect": "eslint-config-inspector",
         "build": "rimraf dist && tsup && tsc --project ./tsconfig.build.json",
